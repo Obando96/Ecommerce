@@ -1,0 +1,342 @@
+*{margin: auto; padding: 0%;}
+
+.logo{
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(240, 36, 36);
+    font-weight: 600;
+    margin-top: 1px;
+    margin-left: 6%;
+}
+
+#buscador{
+    margin-left: 10%;
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid red;
+}
+
+.btnBuscar{
+    background-image: url("/Iconos/buscar.png");
+    background-size: 40px ;
+    background-repeat: no-repeat;
+    background-position: right center;
+    cursor: pointer;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 8vh;
+    background-color: #020403;
+}
+
+.ham{
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.enlaces-menu{
+    display: flex;
+}
+
+.enlaces-menu li{
+    padding: 0 20px;
+    list-style-type: none;
+    line-height: 20px;
+}
+
+.enlaces-menu li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ADADAD;
+    font-weight: 600;
+}
+
+.enlaces-menu li a:hover{
+    color: orange;
+}
+
+.enlaces-registro{
+    display: flex;
+    padding: 0 6% 0 0;
+}
+
+.enlaces-registro li{
+    padding: 0 20px;
+    list-style-type: none;
+    line-height: 20px;
+}
+
+.enlaces-registro li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ADADAD;
+    font-weight: 600;
+}
+
+.enlaces-registro li a:hover{
+    color: orange;
+}
+
+.ham span{
+    display: block;
+    background-color: #f3f3f3;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+.boton{
+    text-align: right;
+    background-color: none;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.boton .linea{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.slider{
+    width: 700px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    box-shadow:  10px 10px 15px gray;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 600%;
+    animation: slide 24s infinite alternate ease-in-out;
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0% {margin-left: 0%;}
+    12% {margin-left: 0%;}
+
+    17% {margin-left: -100%;}
+    29% {margin-left: -100%;}
+
+    34% {margin-left: -200%;}
+    46% {margin-left: -200%;}
+
+    51% {margin-left: -300%;}
+    63% {margin-left: -300%;}
+
+    68% {margin-left: -400%;}
+    80% {margin-left: -400%;}
+
+    85% {margin-left: -500%;}
+    100% {margin-left: -500%;}
+
+}
+
+.contenedorProductos h1{
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.contenedorProductos{
+    margin-top: 60px;
+    width: 96%;
+}
+
+.contenedorProductosMujer{
+    position: relative;
+}
+
+.productosSiguiente, .productosAnterior{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    top: calc(50% - 35px);
+    line-height: 30px;
+    background: none;
+    color: #fff;
+    opacity: 20%;
+}
+
+.productosAnterior{
+    left: -30px;
+}
+.productosSiguiente{
+    right: -30px;
+}
+
+.elementosProductos {
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.elementosProductos img{
+    border-radius: 10px;
+}
+
+.contenedorProductosHombre{
+    position: relative;
+}
+
+.productosSiguiente2, .productosAnterior2{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    top: calc(50% - 35px);
+    line-height: 30px;
+    background: none;
+    color: #fff;
+    opacity: 20%;
+}
+
+.productosAnterior2{
+    left: -30px;
+}
+.productosSiguiente2{
+    right: -30px;
+}
+
+.elementosProductos2 {
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.elementosProductos2 img{
+    border-radius: 10px;
+}
+
+.listaProductos2{
+    margin: 90px 0 10px 0;
+}
+
+.precio-comprar{
+    display: flex;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.precio{
+    font-size: 25px;
+}
+
+.comprar{
+    cursor: pointer;
+    background-color: lightblue;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    width: 42%;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.contenedorCarrito{
+    border: 1px solid black;
+
+}
+
+.titulosCarrito{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 20px;
+}
+
+.itemProductoAgregado{
+    border: 1px solid ;
+}
+
+.producto-descripcionAgregado{
+    text-align: center;
+}
+
+.imagenProductoAgregado{
+    width: 180px;
+}
+
+.itemPrecio{
+    font-size: 30px;
+}
+
+.itemCantidad{
+    font-size: 25px
+}
+
+.total{
+    font-size: 30px;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+.btnComprar{
+    margin: 30px;
+    text-align: center;
+}
+
+.btnComprar button{
+    width: 100px;
+    cursor: pointer;
+    background-color: lightblue;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.cantidadProducto{
+    width: 30px;
+}
+
+.productoAgregado{
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.productoAgregado div{
+    margin: auto;
+}
+
+.productoAgregado div:nth-child(1){
+    flex:  0 ;
+}
+.productoAgregado div:nth-child(2){
+    font-size: 20px;
+    margin-right: 160px;
+}
+.productoAgregado div:nth-child(3){
+    flex: 1;
+    border: none;
+}
