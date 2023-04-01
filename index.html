@@ -1,322 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="#" class="logo">GM</a>
-            <input type="text" id="buscador" class="btnBuscar" placeholder=" Buscar....">
-            <ul class="enlaces-menu">
-                <li><a href="#">Quienes somos</a></li>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Servicios</a></li>
-            </ul>
-            <ul class="enlaces-registro">
-                
-                <li><a href="#"><font size="2px">Iniciar sesión</font></a></li>
-                <li><a href="#"><font size="2px">Registrarse</font></a></li>
-            </ul>
-            <button class="ham" type="button">
-                <span class="linea"></span>
-                <span class="linea"></span>
-                <span class="linea"></span>
-            </button>
-        </nav>
-    </header>
-    
-    <div class="slider">
-        <ul>
-            <li><img src="/Imagenes/imagen1.png" alt=""></li>
-            <li><img src="/Imagenes/imagen2.jpg" alt=""></li>
-            <li><img src="/Imagenes/imagen3.jpg" alt=""></li>
-            <li><img src="/Imagenes/imagen4.png" alt=""></li>
-            <li><img src="/Imagenes/imagen5.jpg" alt=""></li>
-            <li><img src="/Imagenes/imagen6.png" alt=""></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>E-commece</title>
+  </head>
+  <body>
+    <header class="headerPincipal">
+      <a href="#" class="logo">GM</a>
+      <form>
+        <input
+          type="text"
+          id="buscador"
+          class="inputBuscar"
+          placeholder=" Buscar...."
+        />
+      </form>
+      <nav class="nav">
+        <ul class="enlaces-menu">
+          <li><a href="#">Quienes somos</a></li>
+          <li><a href="#">Categorias</a></li>
+          <li><a href="#">Servicios</a></li>
         </ul>
+        <ul class="enlaces-registro">
+          <li>
+            <a href="#"><font size="2px">Iniciar sesión</font></a>
+          </li>
+          <li>
+            <a href="#"><font size="2px">Registrarse</font></a>
+          </li>
+        </ul>
+      </nav>
+      <i class="bx bx-menu menu"></i>
+    </header>
+
+    <div class="slider">
+      <ul>
+        <li><img src="/Imagenes/imagen1.png" alt="" /></li>
+        <li><img src="/Imagenes/imagen2.jpg" alt="" /></li>
+        <li><img src="/Imagenes/imagen3.jpg" alt="" /></li>
+        <li><img src="/Imagenes/imagen4.png" alt="" /></li>
+        <li><img src="/Imagenes/imagen5.jpg" alt="" /></li>
+        <li><img src="/Imagenes/imagen6.png" alt="" /></li>
+      </ul>
     </div>
 
     <div class="contenedorProductos">
-        <h1>Productos</h1>
-        <div class="productosMujer">
-            <div class="contenedorProductosMujer">
-                <button aria-label="Anterior" class="productosAnterior">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-
-                <div class="listaProductos">
-                    <div class="elementosProductos">
-                        <img src="/Productos-mujer/1.jpg" class="imagen" alt="Camiseta negra nike">
-                        <p class="descripcionProducto">Camiseta negra nike</p >
-                        <div class="precio-comprar">
-                            <p  class="precio">$ 35.00</p>
-                            <button class="comprar" id="mujer-1">Añadir al carrito</button>
-                        </div>
-                        
-                    </div>
-                    <div class="elementosProductos">
-                        <img src="/Productos-mujer/2.jpg" class="imagen" alt="Camiseta rosada nike">
-                        <p class="descripcionProducto">Camiseta rosada nike</p>
-                        <div class="precio-comprar">
-                            <p class="precio">$ 20.00</p>
-                            <button class="comprar" id="mujer-2">Añadir al carrito</button>
-                        </div>
-                        
-                    </div>
-                    <div class="elementosProductos">
-                        <img src="/Productos-mujer/3.jpg" class="imagen" alt="Camiseta FC Barcelona">
-                        <p class="descripcionProducto">Camiseta FC Barcelona</p>
-                        <div class="precio-comprar">
-                            <p class="precio">$ 22.00</p>
-                            <button class="comprar" id="mujer-3">Añadir al carrito</button>
-                        </div>
-                        
-                    </div>
-                    <div class="elementosProductos">
-                        <img src="/Productos-mujer/4.jpg" class="imagen" alt="Vividí negra nike">
-                        <p class="descripcionProducto">Vividí negra nike</p>
-                        <div class="precio-comprar">
-                            <p class="precio">$ 15.50</p>
-                            <button class="comprar" id="mujer-4">Añadir al carrito</button>
-                        </div>
-                        
-                    </div>
-                    <div class="elementosProductos">
-                        <img src="/Productos-mujer/5.jpg" class="imagen" alt="Camiseta ploma nike">
-                        <p class="descripcionProducto">Camiseta ploma nike</p>
-                        <div class="precio-comprar">
-                            <p class="precio">$ 30.00</p>
-                            <button class="comprar" id="mujer-5">Añadir al carrito</button>
-                        </div>
-                        
-                    </div>
-                    <div class="elementosProductos">
-                        <img src="/Productos-mujer/6.jpg" class="imagen" alt="Camiseta blanca nike">
-                        <p class="descripcionProducto">Camiseta blanca nike</p>
-                        <div class="precio-comprar">
-                            <p class="precio">$ 22.00</p>
-                            <button class="comprar" id="mujer-6">Añadir al carrito</button>
-                        </div>
-                        
-                    </div>
-                    <div class="elementosProductos">
-                        <img src="/Productos-mujer/7.jpg" class="imagen" alt="Camiseta rosada nike">
-                        <p class="descripcionProducto">Camiseta rosada nike</p>
-                        <div class="precio-comprar">
-                            <p class="precio">$ 18.00</p>
-                            <button class="comprar" id="mujer-7">Añadir al carrito</button>
-                        </div>
-                        
-                    </div>
-                    <div class="elementosProductos">
-                        <img src="/Productos-mujer/8.jpg" class="imagen" alt="Camiseta celeste nike">
-                        <p class="descripcionProducto">Camiseta celeste nike</p>
-                        <div class="precio-comprar">
-                            <p class="precio">$ 20.50</p>
-                            <button class="comprar" id="mujer-8">Añadir al carrito</button>
-                        </div>
-                        
-                    </div>
-                    <div class="elementosProductos">
-                        <img src="/Productos-mujer/9.jpg" class="imagen" alt="Vividí roja nike">
-                        <p class="descripcionProducto">Vividí roja nike</p>
-                        <div class="precio-comprar">
-                            <p class="precio">$ 40.00</p>
-                            <button class="comprar" id="mujer-9">Añadir al carrito</button>
-                        </div>
-                        
-                    </div>
-                    <div class="elementosProductos">
-                        <img src="/Productos-mujer/10.jpg" class="imagen" alt="Vividí Celeste nike">
-                        <p class="descripcionProducto">Vividí Celeste nike</p>
-                        <div class="precio-comprar">
-                            <p class="precio">$ 25.00</p>
-                            <button class="comprar" id="mujer-10">Añadir al carrito</button>
-                        </div>
-                        
-                    </div>
-                    <div class="elementosProductos">
-                        <img src="/Productos-mujer/11.jpg" class="imagen" alt="Camiseta beige nike">
-                        <p class="descripcionProducto">Camiseta beige nike</p>
-                        <div class="precio-comprar">
-                            <p class="precio">$ 15.60</p>
-                            <button class="comprar" id="mujer-11">Añadir al carrito</button>
-                        </div>
-                        
-                    </div>
-                    <div class="elementosProductos">
-                        <img src="/Productos-mujer/12.jpg" class="imagen" alt="Camiseta ploma nike">
-                        <p class="descripcionProducto">Camiseta ploma nike</p>
-                        <div class="precio-comprar">
-                            <p class="precio">$ 14.00</p>
-                            <button class="comprar" id="mujer-12">Añadir al carrito</button>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <button aria-label="Siguiente" class="productosSiguiente">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
-
-            </div>
-
-            <div role="tablist" class="productosIndicadores"></div>
+      <h1>Productos</h1>
+      <button class="productosAnterior">
+        <i class="bx bx-chevron-left"></i>
+      </button>
+      <div class="listaProductos">
+        <div class="elementosProductos">
+          <img
+            src="/Productos-mujer/1.jpg"
+            class="imagen"
+            alt="Camiseta negra nike"
+          />
+          <p class="descripcionProducto">Camiseta negra nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 35.00</p>
+            <button class="comprar" id="mujer-1">Añadir al carrito</button>
+          </div>
         </div>
-        <div class="contenedorProductosHombre">
-            <button aria-label="Anterior2" class="productosAnterior2">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-
-            <div class="listaProductos2">
-                <div class="elementosProductos">
-                    <img src="/Productos-hombre/1.jpg" class="imagen" alt="Camiseta verde nike">
-                    <p class="descripcionProducto">Camiseta verde nike</p>
-                    <div class="precio-comprar">
-                        <p class="precio">$ 14.00</p>
-                        <button class="comprar" id="hombre-1">Añadir al carrito</button>
-                    </div>
-                    
-                </div>
-                <div class="elementosProductos">
-                    <img src="/Productos-hombre/2.jpg" class="imagen" alt="Camiseta negra nike">
-                    <p class="descripcionProducto">Camiseta negra nike</p>
-                    <div class="precio-comprar">
-                        <p class="precio">$ 14.00</p>
-                        <button class="comprar" id="hombre-2">Añadir al carrito</button>
-                    </div>
-                    
-                </div>
-                <div class="elementosProductos">
-                    <img src="/Productos-hombre/3.jpg" class="imagen" alt="Camiseta blanca nike">
-                    <p class="descripcionProducto">Camiseta blanca nike</p>
-                    <div class="precio-comprar">
-                        <p class="precio">$ 14.00</p>
-                        <button class="comprar" id="hombre-3">Añadir al carrito</button>
-                    </div>
-                    
-                </div>
-                <div class="elementosProductos">
-                    <img src="/Productos-hombre/4.jpg" class="imagen" alt="Vividí negra nike">
-                    <p class="descripcionProducto">Vividí negra nike</p>
-                    <div class="precio-comprar">
-                        <p class="precio">$ 14.00</p>
-                        <button class="comprar" id="hombre-4">Añadir al carrito</button>
-                    </div>
-                    
-                </div>
-                <div class="elementosProductos">
-                    <img src="/Productos-hombre/5.jpg" class="imagen" alt="Camiseta ploma nike">
-                    <p class="descripcionProducto">Camiseta ploma nike</p>
-                    <div class="precio-comprar">
-                        <p class="precio">$ 14.00</p>
-                        <button class="comprar" id="hombre-5">Añadir al carrito</button>
-                    </div>
-                    
-                </div>
-                <div class="elementosProductos">
-                    <img src="/Productos-hombre/6.jpg" class="imagen" alt="Camiseta azul nike">
-                    <p class="descripcionProducto">Camiseta azul nike</p>
-                    <div class="precio-comprar">
-                        <p class="precio">$ 14.00</p>
-                        <button class="comprar" id="hombre-6">Añadir al carrito</button>
-                    </div>
-                    
-                </div>
-                <div class="elementosProductos">
-                    <img src="/Productos-hombre/7.jpg" class="imagen" alt="Camiseta blanca nike">
-                    <p class="descripcionProducto">Camiseta blanca nike</p>
-                    <div class="precio-comprar">
-                        <p class="precio">$ 14.00</p>
-                        <button class="comprar" id="hombre-7">Añadir al carrito</button>
-                    </div>
-                    
-                </div>
-                <div class="elementosProductos">
-                    <img src="/Productos-hombre/8.jpg" class="imagen" alt="Camiseta roja nike">
-                    <p class="descripcionProducto">Camiseta roja nike</p>
-                    <div class="precio-comprar">
-                        <p class="precio">$ 14.00</p>
-                        <button class="comprar" id="hombre-8">Añadir al carrito</button>
-                    </div>
-                    
-                </div>
-                <div class="elementosProductos">
-                    <img src="/Productos-hombre/9.jpg" class="imagen" alt="Camiseta negra nike">
-                    <p class="descripcionProducto">Camiseta negra nike</p>
-                    <div class="precio-comprar">
-                        <p class="precio">$ 14.00</p>
-                        <button class="comprar" id="hombre-9">Añadir al carrito</button>
-                    </div>
-                    
-                </div>
-                <div class="elementosProductos">
-                    <img src="/Productos-hombre/10.png" class="imagen" alt="Camiseta ploma nike">
-                    <p class="descripcionProducto">Camiseta verde nike</p>
-                    <div class="precio-comprar">
-                        <p class="precio">$ 14.00</p>
-                        <button class="comprar" id="hombre-10">Añadir al carrito</button>
-                    </div>
-                    
-                </div>
-                <div class="elementosProductos">
-                    <img src="/Productos-hombre/11.jpg" class="imagen" alt="Buso plomo nike">
-                    <p class="descripcionProducto">Buso plomo nike</p>
-                    <div class="precio-comprar">
-                        <p class="precio">$ 14.00</p>
-                        <button class="comprar" id="hombre-11">Añadir al carrito</button>
-                    </div>
-                    
-                </div>
-                <div class="elementosProductos">
-                    <img src="/Productos-hombre/12.jpg" class="imagen" alt="Camiseta azul marino nike">
-                    <p class="descripcionProducto">Camiseta azul marino nike</p>
-                    <div class="precio-comprar">
-                        <p class="precio">$ 14.00</p>
-                        <button class="comprar" id="hombre-12">Añadir al carrito</button>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <button aria-label="Siguiente2" class="productosSiguiente2">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
-
-            <div role="tablist" class="productosIndicadores2"></div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-mujer/2.jpg"
+            class="imagen"
+            alt="Camiseta rosada nike"
+          />
+          <p class="descripcionProducto">Camiseta rosada nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 20.00</p>
+            <button class="comprar" id="mujer-2">Añadir al carrito</button>
+          </div>
         </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-mujer/3.jpg"
+            class="imagen"
+            alt="Camiseta FC Barcelona"
+          />
+          <p class="descripcionProducto">Camiseta FC Barcelona</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 22.00</p>
+            <button class="comprar" id="mujer-3">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-mujer/4.jpg"
+            class="imagen"
+            alt="Vividí negra nike"
+          />
+          <p class="descripcionProducto">Vividí negra nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 15.50</p>
+            <button class="comprar" id="mujer-4">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-mujer/5.jpg"
+            class="imagen"
+            alt="Camiseta ploma nike"
+          />
+          <p class="descripcionProducto">Camiseta ploma nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 30.00</p>
+            <button class="comprar" id="mujer-5">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-mujer/6.jpg"
+            class="imagen"
+            alt="Camiseta blanca nike"
+          />
+          <p class="descripcionProducto">Camiseta blanca nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 22.00</p>
+            <button class="comprar" id="mujer-6">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-mujer/7.jpg"
+            class="imagen"
+            alt="Camiseta rosada nike"
+          />
+          <p class="descripcionProducto">Camiseta rosada nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 18.00</p>
+            <button class="comprar" id="mujer-7">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-mujer/8.jpg"
+            class="imagen"
+            alt="Camiseta celeste nike"
+          />
+          <p class="descripcionProducto">Camiseta celeste nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 20.50</p>
+            <button class="comprar" id="mujer-8">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-mujer/9.jpg"
+            class="imagen"
+            alt="Vividí roja nike"
+          />
+          <p class="descripcionProducto">Vividí roja nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 40.00</p>
+            <button class="comprar" id="mujer-9">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-mujer/10.jpg"
+            class="imagen"
+            alt="Vividí Celeste nike"
+          />
+          <p class="descripcionProducto">Vividí Celeste nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 25.00</p>
+            <button class="comprar" id="mujer-10">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-mujer/11.jpg"
+            class="imagen"
+            alt="Camiseta beige nike"
+          />
+          <p class="descripcionProducto">Camiseta beige nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 15.60</p>
+            <button class="comprar" id="mujer-11">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-mujer/12.jpg"
+            class="imagen"
+            alt="Camiseta ploma nike"
+          />
+          <p class="descripcionProducto">Camiseta ploma nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 14.00</p>
+            <button class="comprar" id="mujer-12">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
 
-            <h1>Carrito</h1>
-
-            <div class="contenedorCarrito">
-                <div class="titulosCarrito">
-                    <p>Producto</p>
-                    <p>Precio</p>
-                    <p>Cantidad</p>
-                    <p>Eliminar</p>
-                </div>
-                
-            </div>
-            <div class="contenedorProductosAgregados">
-                    
-            </div>
-            <div class="total">
-                <p>$ 0.00</p>
-            </div>
-            <div class="btnComprar">
-                <button>Comprar</button>
-            </div>
+      <div class="listaProductos">
+        <div class="elementosProductos">
+          <img
+            src="/Productos-hombre/1.jpg"
+            class="imagen"
+            alt="Camiseta verde nike"
+          />
+          <p class="descripcionProducto">Camiseta verde nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 14.00</p>
+            <button class="comprar" id="hombre-1">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-hombre/2.jpg"
+            class="imagen"
+            alt="Camiseta negra nike"
+          />
+          <p class="descripcionProducto">Camiseta negra nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 14.00</p>
+            <button class="comprar" id="hombre-2">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-hombre/3.jpg"
+            class="imagen"
+            alt="Camiseta blanca nike"
+          />
+          <p class="descripcionProducto">Camiseta blanca nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 14.00</p>
+            <button class="comprar" id="hombre-3">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-hombre/4.jpg"
+            class="imagen"
+            alt="Vividí negra nike"
+          />
+          <p class="descripcionProducto">Vividí negra nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 14.00</p>
+            <button class="comprar" id="hombre-4">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-hombre/5.jpg"
+            class="imagen"
+            alt="Camiseta ploma nike"
+          />
+          <p class="descripcionProducto">Camiseta ploma nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 14.00</p>
+            <button class="comprar" id="hombre-5">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-hombre/6.jpg"
+            class="imagen"
+            alt="Camiseta azul nike"
+          />
+          <p class="descripcionProducto">Camiseta azul nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 14.00</p>
+            <button class="comprar" id="hombre-6">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-hombre/7.jpg"
+            class="imagen"
+            alt="Camiseta blanca nike"
+          />
+          <p class="descripcionProducto">Camiseta blanca nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 14.00</p>
+            <button class="comprar" id="hombre-7">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-hombre/8.jpg"
+            class="imagen"
+            alt="Camiseta roja nike"
+          />
+          <p class="descripcionProducto">Camiseta roja nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 14.00</p>
+            <button class="comprar" id="hombre-8">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-hombre/9.jpg"
+            class="imagen"
+            alt="Camiseta negra nike"
+          />
+          <p class="descripcionProducto">Camiseta negra nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 14.00</p>
+            <button class="comprar" id="hombre-9">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-hombre/10.png"
+            class="imagen"
+            alt="Camiseta ploma nike"
+          />
+          <p class="descripcionProducto">Camiseta verde nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 14.00</p>
+            <button class="comprar" id="hombre-10">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-hombre/11.jpg"
+            class="imagen"
+            alt="Buso plomo nike"
+          />
+          <p class="descripcionProducto">Buso plomo nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 14.00</p>
+            <button class="comprar" id="hombre-11">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="elementosProductos">
+          <img
+            src="/Productos-hombre/12.jpg"
+            class="imagen"
+            alt="Camiseta azul marino nike"
+          />
+          <p class="descripcionProducto">Camiseta azul marino nike</p>
+          <div class="precio-comprar">
+            <p class="precio">$ 14.00</p>
+            <button class="comprar" id="hombre-12">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="contenedorCarrito">
+      <h1 class="tituloCarrito">Carrito</h1>
+      <ul class="titulosProductosCarrito">
+        <li>Producto</li>
+        <li>Precio</li>
+        <li>Cantidad</li>
+        <li>Eliminar</li>
+      </ul>
+      <div class="contenedorProductosAgregados"></div>
+
+      <div></div>
+      <div>
+        <p class="precioTotal">$ 0.00</p>
+      </div>
+      <div class="btnComprar">
+        <button>Comprar</button>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
